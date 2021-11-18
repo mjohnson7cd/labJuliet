@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SCUBA BINGO Sign-up</title>
+  <!-- fonts -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <!-- bootstrap 5.0.2 -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <!-- styles -->
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+<form id='signup'>
+<p class="tip"></p>
+<div class="cont">
+  <div class="form sign-in">
+    <h2>SCUBA BINGO</h2>
+
+    <label>
+      <span>Email</span>
+      <input type="email" id="email" aria-describedby="Email Input" placeholder="smith@gmail.com" required>
+    </label>
+
+    <label>
+      <span>Password</span>
+      <input type="password" id="password">
+      <input id ="togglePassword" type="checkbox" aria-describedby="Password Input" required> 
+      <span>Show Password</span>
+    </label>
+
+    <label>
+      <span>First name</span>
+      <input type="text" aria-describedby="First name" id="firstName" placeholder="John" required>
+    </label>
+
+    <label>
+      <span>Last name</span>
+      <input type="text"  aria-describedby="Last name" id="lastName" placeholder="Doe" required>
+    </label>
+
+    <label>
+      <span>Phone number</span> <!-- xxx-xxx-xxxx -->
+      <input type="tel" id="phone" placeholder="xxx-xxx-xxxx" aria-describedby="Phone number">
+    </label>
+
+    <label>
+      <span>Date and time</span>
+      <input type="datetime-local" id="date" aria-describedby="Date and Time" required>
+    </label>
+
+    <label>
+      <label>
+      <span id="pizzaOutput" for="pizzaCheckbox">Check me if you're bringing pizza!</span>
+      <input id="pizzaCheckbox" type="checkbox" class="form-check-input" aria-describedby="Bring tacos? ">
+    </label>
+
+    <label>
+       <button class="btn-primary" type="submit">Submit</button>
+       <button class="btn" name="ResetForm" id="ResetForm" type="button">Reset Data</button>
+       <button class="btn" name="btnLoadData" id="btnLoadData" type="button">Load Data</button>
+     </label>
+
+  </div>
+  <div class="sub-cont">
+    <div class="img"></div> <!-- See line 69 in ./styles/style.css -->
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/ajax.js"></script>
+
+</body>
+</html>
